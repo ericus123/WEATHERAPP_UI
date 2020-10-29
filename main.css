@@ -1,0 +1,92 @@
+html,
+body {
+  background: #ffffff;
+  height: 100%;
+}
+.container {
+  background: #458cf6;
+  height: 95%;
+  width: 100%;
+  margin-bottom: -10%;
+}
+.title {
+  background: #458cf6;
+  height: 10%;
+  text-align: center;
+  font-family: sans-serif;
+}
+.search {
+  text-align: center;
+  background: #458cf6;
+  height: 10%;
+  margin-top: 1.5%;
+  display: grid;
+  grid-template-columns: auto;
+}
+.search form {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-gap: 0.25%;
+  grid-template-columns: auto 20%;
+}
+.search form input {
+  height: 7.5vh;
+  font-size: large;
+}
+.search button {
+  height: 8vh;
+}
+.details1 {
+  color: white;
+}
+.details {
+  background: #458cf6;
+  height: 60%;
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: row;
+}
+.details .details_weather {
+  background: #458cf6;
+  height: 99%;
+  margin: 0.5%;
+  width: 49%;
+}
+.details .details_img {
+  background: #458cf6;
+  height: 99%;
+  margin: 0.5%;
+  width: 49%;
+}
+.details .details_img img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 20%;
+}
+.details1 {
+  text-align: center;
+}
+.details1 .location {
+  margin-top: 5%;
+}
+.details1 .temp img {
+  margin-left: 5%;
+  margin-bottom: -2.5%;
+}
+.details1 .description {
+  font-size: medium;
+  font-style: italic;
+  font-weight: normal;
+}
+.date {
+  font-size: large;
+  font-family: serif;
+  font-style: italic;
+}
+.time {
+  font-size: large;
+  font-family: serif;
+  font-style: italic;
+}

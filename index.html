@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>WEATHER_APP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Weather App</h1></div>
+        <div class="search"><form action="">
+            <input name="city" type="text" placeholder="Enter city name . . .">
+            <button type="submit">Send</button>
+        </form></div>
+        <div class="details">
+            <div class="details_img"><img src="./images/undraw_Weather_app_re_kcb1.svg" alt=""></div>
+            <div class="details_weather">
+                <div class="img_div"></div>
+                <div class="details1">
+                    <h1 class="location"><span>Kigali,</span><span>Rw</span></h1><br>
+                    <h1 class="temp"><span>15&#176;</span><img src="./images/116.png" alt=""></h1>
+                    <h1 class="date"></h1>
+                    <h1 class="time"></h1>
+                    <h1 class="description">Few clouds in the area</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./axios/weather.js"></script>
+</body>
+</html>
