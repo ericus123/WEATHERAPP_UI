@@ -15,6 +15,9 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
+.title h1 {
+  padding-top: 1.5%;
+}
 .search {
   text-align: center;
   background: #458cf6;
@@ -37,6 +40,13 @@ body {
 }
 .search button {
   height: 8vh;
+  border: none;
+  border-radius: 5px;
+}
+.search button:hover {
+  background: rgb(40, 40, 41);
+  color: white;
+  transition: 0.2s ease-in-out;
 }
 .details1 {
   color: white;
@@ -68,10 +78,16 @@ body {
 .details1 {
   text-align: center;
 }
-.details1 .location {
-  margin-top: 5%;
+.details_weather .details1 .location {
+  display: inline-flex;
 }
-.details1 .temp img {
+.details_weather .details1 .location .town {
+  text-align: center;
+}
+.details_weather .details1 .temperature {
+  display: inline-flex;
+}
+.details1 .temperature img {
   margin-left: 5%;
   margin-bottom: -2.5%;
 }
@@ -89,4 +105,10 @@ body {
   font-size: large;
   font-family: serif;
   font-style: italic;
+}
+.status {
+  text-align: center;
+  color: rgb(255, 15, 15);
+  font-style: italic;
+  font-size: medium;
 }
