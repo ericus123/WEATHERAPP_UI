@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Weather App">
+    <meta property="og:image" content="https://i.postimg.cc/m2X5yWvc/Screenshot-from-2020-10-30-14-56-27.png">
+    <meta property="og:description" content="This is a realtime weather app ">
+    <meta name="author" content="Amani Eric">
     <link rel="stylesheet" href="main.css">
     <title>WEATHER_APP</title>
 </head>
 <body>
     <div class="container">
-        <div class="title"><h1>Weather App</h1></div>
+        <div class="title"><h1 class="tit">Weather App</h1></div>
         <div class="search"><form>
-            <input class="city" name="city" type="text" placeholder="Enter city name . . .">
-            <button class="butt" type="submit">Send</button>
+                          <input class="city" name="city" type="text" placeholder="Enter city or country name. . .">
+        <button class="butt" type="submit">Send</button>
         </form></div>
         <h1 class="status"></h1>
         <div class="details">
             <div class="details_img"><img src="./images/undraw_Weather_app_re_kcb1.svg" alt=""></div>
             <div class="details_weather">
-                <div class="img_div"></div>
                 <div class="details1">
                     <div class="location"><h1 class="town"></h1><h1 class="country"></h1></div><br>
                     <div class="temperature"><h1 class="temp"></h1><img class="status_img" src="" alt=""></div>
@@ -27,6 +30,7 @@
                 </div>
             </div>
         </div>
+        <h1 class="copyright">&copy <a target="_blank" href="https://github.com/ericus123/WEATHER_APP">AMANI Eric</a> 2020</h1>
     </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./axios/weather.js"></script>

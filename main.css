@@ -1,13 +1,12 @@
 html,
 body {
-  background: #ffffff;
-  height: 100%;
+  background: #458cf6;
 }
 .container {
   background: #458cf6;
-  height: 95%;
+  max-height: 90vh;
   width: 100%;
-  margin-bottom: -10%;
+  z-index: 99;
 }
 .title {
   background: #458cf6;
@@ -16,12 +15,13 @@ body {
   font-family: sans-serif;
 }
 .title h1 {
-  padding-top: 1.5%;
+  padding-top: 0.5%;
+  font-weight: normal;
 }
 .search {
   text-align: center;
   background: #458cf6;
-  height: 10%;
+  height: 15%;
   margin-top: 1.5%;
   display: grid;
   grid-template-columns: auto;
@@ -38,12 +38,16 @@ body {
   height: 7.5vh;
   font-size: large;
 }
-.search button {
-  height: 8vh;
+.search form .butt {
+  height: 7.5vh;
   border: none;
   border-radius: 5px;
+  position: relative;
+  background: white;
+  cursor: pointer;
 }
-.search button:hover {
+
+.search form .butt:hover {
   background: rgb(40, 40, 41);
   color: white;
   transition: 0.2s ease-in-out;
@@ -63,6 +67,7 @@ body {
   height: 99%;
   margin: 0.5%;
   width: 49%;
+  margin-top: 5%;
 }
 .details .details_img {
   background: #458cf6;
@@ -77,6 +82,7 @@ body {
 }
 .details1 {
   text-align: center;
+  height: 70%;
 }
 .details_weather .details1 .location {
   display: inline-flex;
@@ -111,4 +117,63 @@ body {
   color: rgb(255, 15, 15);
   font-style: italic;
   font-size: medium;
+  margin-bottom: 20%;
+}
+.copyright {
+  font-size: x-small;
+  text-align: center;
+  position: relative;
+  margin-top: 25px;
+  font-style: italic;
+  color: white;
+}
+.copyright a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 460px) {
+  .search form {
+    text-align: center;
+    background: #458cf6;
+    height: 15%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .search form input {
+    height: 5vh;
+    font-size: large;
+    margin-bottom: 0.5%;
+  }
+  .search form .butt {
+    min-height: 5vh;
+    width: 25%;
+    margin-left: auto;
+    border: none;
+    border-radius: 5px;
+  }
+  .details {
+    background: #458cf6;
+    margin-top: 0.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .details .details_weather {
+    background: #458cf6;
+    margin-top: -15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .details .details_img {
+    width: 55%;
+    height: 40%;
+  }
+  .details .details_img img {
+    margin-left: 0%;
+  }
 }
